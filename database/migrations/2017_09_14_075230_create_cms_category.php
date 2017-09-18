@@ -21,7 +21,7 @@ class CreateCmsCategory extends Migration
                 $table->string("cover", 256)->nullable()->comment("图片");
                 $table->tinyInteger("active")->comment("是否激活：[ 0,未激活; 1,已激活 ]");
                 $table->timestamps();
-                $table->timestamp("deleted_at")->nullabe();
+                $table->timestamp("deleted_at")->nullable();
             });
         }
     }
