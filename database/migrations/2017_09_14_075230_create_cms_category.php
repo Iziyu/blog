@@ -17,7 +17,8 @@ class CreateCmsCategory extends Migration
             Schema::create("cms_category", function (Blueprint $table) {
                 $table->increments("id");
                 $table->integer("cate_id")->default(0);
-                $table->string("name", 32)->comment("分类名称");
+                $table->string("name", 16)->unique()->comment("分类名称");
+                $table->string("display_name", 32)->comment("分类显示名称");
                 $table->string("cover", 256)->nullable()->comment("图片");
                 $table->tinyInteger("active")->comment("是否激活：[ 0,未激活; 1,已激活 ]");
                 $table->timestamps();

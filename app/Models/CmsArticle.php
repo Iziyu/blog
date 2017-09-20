@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use App\Services\ScopeSearchTrait;
 use Illuminate\Database\Eloquent\Model;
 
 class CmsArticle extends Model
 {
+    use ScopeSearchTrait;
+
     protected $table = "cms_article";
     protected $guarded = ["id"];
 

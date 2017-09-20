@@ -1,0 +1,126 @@
+.navbar-default {
+    background-color: aquamarine;
+}
+
+.navbar-header a.navbar-brand {
+    color: #3399FF;
+    font-size: 14px;
+}
+
+.navbar-header a.navbar-brand:hover{
+   color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text{
+    color: #3399FF;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-text:hover {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: burlywood;
+    color: #d9edf7;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background-color: aquamarine;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: aquamarine;
+}
+
+.navbar-search-group {
+    float: left;
+    padding: 10px 30%;
+}
+
+.navbar-search-group button {
+    background-color: aquamarine;
+    color: hotpink;
+}
+
+.navbar-search-group input {
+    color: yellowgreen;
+}
+
+.navbar-search-group input::placeholder {
+    color: yellowgreen;
+}
+
+.wel-label {
+    position: relative;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    float: left;
+}
+
+.nav-card {
+    background: #E6F4FB;
+    margin-top: 15px;
+}
+
+.nav-card-head {
+    border-bottom: solid 1px #fff;
+}
+
+.nav-card-title {
+    line-height: 32px;
+    font-weight: bold;
+    border-left: solid 5px #3f913f;
+    padding: 0 6px;
+}
+
+.nav-card-content {
+    padding: 10px 15px;
+}
+
+.nav-card-content-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-card-content-list >li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.nav-card-content-list >li >span {
+    border-radius: 1000px;
+    text-align: center;
+    display: inline-block;
+    min-width: 10px;
+    padding: .25em .625em;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: #999;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0067CC;
+    text-shadow: 0 0 10px #92CCFF;
+    text-decoration: none;
+}
+
+.content-title {
+    font-weight: 400;
+    font-size: medium;
+    margin-bottom: 1px;
+    text-overflow: ellipsis;
+}
+
+.content-content {
+}
