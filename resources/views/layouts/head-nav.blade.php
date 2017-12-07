@@ -15,21 +15,19 @@
                 首页
             </a>
             <!-- Branding Image -->
-            <a class="navbar-brand" href="{{ url('/category/note') }}">
-                笔记
-            </a>
-            <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/about') }}">
                 关于
             </a>
+
+
+            <div class="navbar-search-group">
+                <form action="/article/search" method="get">
+                    <input type="text" name="search" value="{{ \Illuminate\Support\Facades\Input::get('search') }}" placeholder="关键字">
+                    <button>搜索</button>
+                </form>
+            </div>
         </div>
 
-        <div class="navbar-search-group">
-            <form action="/article/search" method="get">
-                <input type="text" name="search" placeholder="搜索">
-                <button>search</button>
-            </form>
-        </div>
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->

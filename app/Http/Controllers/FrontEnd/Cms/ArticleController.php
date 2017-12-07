@@ -27,4 +27,18 @@ class ArticleController extends Controller
             throw $e;
         }
     }
+
+    public function show(Request $request, $id)
+    {
+        try {
+            $article = CmsArticle::query()->with(["category"])->findOrFail($id);
+            return view("front-end.cms.show", [
+                "article" => $article,
+            ]);
+        } catch (\Exception $e) {
+            info(__METHOD__ . "\n" . $e->getTraceAsString());
+            info($e->getCode() . " | " . $e->getMessage());
+            throw $e;
+        }
+    }
 }

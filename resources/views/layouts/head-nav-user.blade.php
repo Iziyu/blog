@@ -1,5 +1,5 @@
 @guest
-    <li><a href="{{ route('login') }}">登陆</a></li>
+    <li><a href="{{ route('login') }}">登录</a></li>
     <li><a href="{{ route('register') }}">注册</a></li>
 @else
     <span class="wel-label">欢迎</span>
@@ -13,7 +13,7 @@
                 <a href="{{ route('logout') }}"
                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                    Logout
+                    退出
                 </a>
 
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

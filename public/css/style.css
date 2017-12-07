@@ -1,5 +1,28 @@
+html, body, #app {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    margin-bottom: 65px;
+    min-height: 85%;
+}
+
+@media (max-device-height: 568px) {
+    .container {
+        min-height: 75%;
+    }
+}
+
+@media (max-device-height: 736px) {
+    .container {
+        min-height: 78%;
+    }
+}
+
 .navbar-default {
-    background-color: aquamarine;
+    background-color: black;
+    height: 51px;
 }
 
 .navbar-header a.navbar-brand {
@@ -20,8 +43,8 @@
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    background-color: burlywood;
-    color: #d9edf7;
+    background-color: aquamarine;
+    color: #3097D1;
 }
 
 .navbar-nav>li>.dropdown-menu {
@@ -36,20 +59,35 @@
 
 .navbar-search-group {
     float: left;
-    padding: 10px 30%;
+    padding: 9px;
 }
 
 .navbar-search-group button {
-    background-color: aquamarine;
-    color: hotpink;
+    background-color: #ffffff;
+}
+.navbar-search-group button:hover {
+    color: #3399FF;
 }
 
-.navbar-search-group input {
-    color: yellowgreen;
+@media (max-width: 375px) {
+    .navbar-search-group input {
+        width: 8em;
+    }
+}
+
+@media (min-width: 500px) {
+    .navbar-search-group {
+        position: absolute;
+        left: 40%;
+    }
+}
+
+
+.navbar-search-group input#search {
+    padding-left: 5px;
 }
 
 .navbar-search-group input::placeholder {
-    color: yellowgreen;
 }
 
 .wel-label {
@@ -71,7 +109,7 @@
 .nav-card-title {
     line-height: 32px;
     font-weight: bold;
-    border-left: solid 5px #3f913f;
+    border-left: solid 5px aquamarine;
     padding: 0 6px;
 }
 
@@ -122,5 +160,55 @@ a:hover {
     text-overflow: ellipsis;
 }
 
+.text-red {
+    color: red;
+}
+
 .content-content {
+}
+
+.show-content-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+}
+
+.show-content-copyright {
+    text-align: center;
+    padding: 10px;
+}
+
+.show-content-content {
+    word-wrap: break-word;
+}
+
+.nav-location {
+    border-bottom: 1px solid royalblue;
+    margin-bottom: 16px;
+}
+
+.footer {
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+    height: 65px;
+    margin-top: -65px;
+}
+
+.footer-link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 .62em;
+    position: relative;
+    font-size: 12px;
+}
+.footer-text {
+    padding: 0 .34em;
+    font-size: 12px;
+}
+
+.list-item {
+    margin: 20px 0;
+    padding-left: 15px;
+    padding-right: 15px;
 }
